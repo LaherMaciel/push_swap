@@ -1,0 +1,25 @@
+# Build artifacts
+*.o
+*.a
+objects/
+push_swap
+Checker/objects/
+Checker/checker
+
+# Test/temp files
+bad_normal.txt
+bad_reverse.txt
+*.nfs*
+
+# External tools (cloned on demand)
+push_swap_visualizer/
+Push-Swap-Tester/
+
+# Norminette
+.norminette.log
+
+# Editor
+.vscode/
+
+# macOS
+.DS_Store
