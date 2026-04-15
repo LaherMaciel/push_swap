@@ -32,10 +32,10 @@ int	store_cut4(char *vals, char *commands, int skip, t_stack *stack)
 		&& ft_isdigit(vals[j + 1] != 1))
 		return (0);
 	if (stack != NULL && ft_isdigit(vals[j]) == 0
-		&& ((vals[j] != '-' || vals[j] != '+')
+		&& ((vals[j] != '-' && vals[j] != '+')
 			&& ft_isdigit(vals[j + 1] != 1)))
 		return (0);
-	if (ft_isdigit(vals[j]) == 0 && ((vals[j] != '-' || vals[j] != '+')
+	if (ft_isdigit(vals[j]) == 0 && ((vals[j] != '-' && vals[j] != '+')
 			&& ft_isdigit(vals[j + 1] != 1)) && skip == 1)
 		return (0);
 	if (ft_isdigit(vals[j]) == 1 && ((vals[j] == '-' || vals[j] == '+')
