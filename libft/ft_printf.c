@@ -54,7 +54,7 @@ int	ft_printaux(const char format, va_list args)
 	if (format == 'x')
 		return (ft_putnbr(va_arg(args, unsigned int), "0123456789abcdef", 16));
 	if (format == 'p')
-		return (putpoint(va_arg(args, unsigned long long), \
+		return (putpoint(va_arg(args, unsigned long long),
 				"0123456789abcdef", 1));
 	return (0);
 }
@@ -90,7 +90,7 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	while (format[++cont])
 	{
-		if (format[cont] == '%')
+		if (format[cont] == '%' && format[cont + 1])
 		{
 			if (format[cont + 1] != '%')
 				i += ft_printaux(format[cont + 1], args);

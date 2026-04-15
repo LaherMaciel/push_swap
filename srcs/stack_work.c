@@ -30,7 +30,7 @@ void	push(t_stack **stack, int content)
 		*stack = new_node;
 	}
 	else
-		ft_printf("Error: Memory allocation failed "\
+		ft_printf("Error: Memory allocation failed "
 			"(function copy_stack())\n");
 }
 

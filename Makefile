@@ -32,7 +32,7 @@ OBJECTS_DIRECTORY = objects/
 OBJECTS = $(addprefix $(OBJECTS_DIRECTORY), $(OBJECT_LIST))
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -pthread #-fsanitize=address
+CFLAGS = -Wall -Werror -Wextra #-fsanitize=address
 
 LIBS = -L$(LIBFT_DIRECTORY) -lft
 INCLUDES = -I.$(HEADERS) -I.$(LIBFT_HEADER)
